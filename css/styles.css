@@ -1,0 +1,975 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+
+
+
+
+nav2{
+    color: white;
+    height: 15vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    background-color:none;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+a:link { color: blue; }          
+a:visited { color: purple; }     
+a:hover { background: yellow; }  
+a:active { color: lime; }        
+
+
+article2 {
+    background-color:none;
+    height: 40vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+a:any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+
+  a:-webkit-any-link {
+    border: 1px solid blue;
+    color: orange;
+  }
+
+article3 {
+    background-color: none;
+    color:white;
+    height: 40vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+
+article4 {
+    background-color: none;
+    color: white;
+    height: 40vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+div,
+select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+    color: red;
+  }
+
+  /* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;
+  }
+
+  /* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px ;
+  }
+  
+  /* Elementos Option, cuando se seleccionan */
+  option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+  }
+
+article5 {
+    background-color: none;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+:current(p, span) {
+    background-color: yellow;
+  }
+
+article6 {
+    background-color: none;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+input:default {
+    box-shadow: 0 0 2px 1px coral;
+  }
+  
+  input:default + label {
+    color: coral;
+  }
+
+article7 {
+    background-color: none;
+    color: white;
+    height: 60vh;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+:dir(ltr) {
+    background-color: yellow;
+  }
+  
+  :dir(rtl) {
+    background-color: powderblue;
+  }
+
+article8 {
+    background-color: none;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+input[type="text"]:disabled {
+    background: #ccc;
+  }
+
+article9 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+.box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+    color: black;
+  }
+  
+  .box:empty {
+    background: lime;
+  }
+
+article10 {
+    background-color: none;
+    color: white;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+input:enabled {
+    color: #2b2;
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
+
+article11 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+/* Selecciona cualquier página de la derecha al imprimir */
+@page :right {
+  margin: 2in 3in;
+}
+  
+  p {
+    page-break-after: always;
+  }
+
+  
+article12 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+article13 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+p:first-of-type {
+  color: red;
+  font-style: italic;
+}
+
+article14 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+
+article15 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+input, button {
+  margin: 10px;
+}
+
+.focus-only:focus {
+  outline: 2px solid black;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 4px dashed darkorange;
+}
+
+article16 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+form {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+
+form:focus-within {
+  background: #ff8;
+  color: black;
+}
+
+input {
+  margin: 4px;
+}
+
+article17 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+:future(p, span) {
+  display: none;
+}
+
+article18 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border: 5px solid lightgreen;
+}
+
+a {
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+article19 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+input:indeterminate + label {
+  background: lime;
+}
+
+article20 {
+    background-color: none;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    border: 5px solid lightgreen;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: 'fuera de rango!';
+}
+
+article21 {
+  background-color: none;
+    color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #C00000;
+}
+
+article22 {
+  background-color: none;
+    color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+article23 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+p:last-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+article24 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article25 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+@page :left {
+  margin: 2in 3in;
+}
+
+article26 {
+  background-color: none;
+  color: white;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+a:link {
+  background-color: gold;
+  color: green;
+}
+
+article27 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+a:local-link {
+  color: green;
+}
+
+article28 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+/* Nivel 0 */
+h6 {
+  font-size: 30px;
+}
+/* Nivel 1 */
+:-moz-any(section, article, aside, nav) h1 {
+  font-size: 25px;
+}
+/* Nivel 2 */
+:-moz-any(section, article, aside, nav)
+:-moz-any(section, article, aside, nav) h1 {
+  font-size: 20px;
+}
+/* Nivel 3 */
+:-moz-any(section, article, aside, nav)
+:-moz-any(section, article, aside, nav)
+:-moz-any(section, article, aside, nav) h1 {
+  font-size: 15px;
+}
+
+article29 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+.fancy {
+  text-shadow: 2px 2px 3px gold;
+}
+
+p:not(.fancy) {
+  color: green;
+}
+
+body :not(p) {
+  text-decoration: underline;
+}
+
+body :not(div):not(span) {
+  font-weight: bold;
+}
+
+body :not(.crazy, .fancy) {
+  font-family: sans-serif;
+}
+
+article30 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+span,
+div em {
+  padding: 5px;
+  border: 1px solid green;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.first span:nth-child(2n+1),
+.second span:nth-child(2n+1),
+.third span:nth-of-type(2n+1) {
+  background-color: lime;
+}
+
+article31 {
+  background-color: none;
+  color: white;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+/* Párrafos impares */
+p:nth-of-type(2n+1) {
+  color: red;
+}
+
+/* Párrafos pares */
+p:nth-of-type(2n) {
+  color: blue;
+}
+
+/* Primer párrafo */
+p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+article32 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+table {
+  border: 1px solid blue;
+}
+
+/* Selecciona los últimos tres elementos */
+tr:nth-last-child(-n+3) {
+  background-color: pink;
+}
+
+/* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+  color: blue;
+}
+
+/* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+  font-weight: 600;
+}
+
+article33 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+span:nth-last-of-type(2) {
+  background-color: lime;
+}
+
+article34 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article35 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+main :only-of-type {
+  color: red;
+}
+
+article36 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+main :only-of-type {
+  color: lime;
+}
+
+article37 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: '¡fuera de rango!';
+}
+article38 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+article39 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+input {
+  border: 2px solid black;
+  padding: 3px;
+}
+
+input:placeholder-shown {
+  border-color: silver;
+}
+
+article40 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article41 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article42 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+input { min-width: 5em; }
+input:-moz-read-only { background: lightgreen; }
+input:read-only { background: lightgreen ; }
+
+p:-moz-read-only { background: lightgray; }
+p:read-only { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
+
+article43 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  border: 5px solid lightgreen;
+}
+
+input { min-width: 5em; }
+input:-moz-read-write { background: white; }
+input:read-write { background: white; }
+
+p:-moz-read-write { background: lightgray; }
+p:read-write { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
+
+article44 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+/* Selecciona cualquier <input> requerido */
+input:required {
+  border: 1px dashed red;
+}
+
+article45 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+/* Selecciona cualquier página de la derecha al imprimir */
+@page :right {
+  margin: 2in 3in;
+}
+
+article46 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+
+article47 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article48 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+article49 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: .25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: red;
+}
+
+article50 {
+  background-color: none;
+  color: white;
+  height: 50vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+p {
+  font-weight: bold;
+}
+
+a:visited {
+  color: black;
+  text-decoration-color: orangered;
+}
+
+nav3{
+  color: white;
+  height: 15vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+article01{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+.exciting-text::after {
+  content: " <- EXCITING!";
+  color: green;
+}
+
+.boring-text::after {
+  content: " <- BORING";
+  color: red;
+}
+
+article02{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+q::before {
+  content: "«";
+  color: blue;
+}
+q::after {
+  content: "»";
+  color: red;
+}
+
+article03{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+p::first-letter {
+  color: blue;
+  font-size: 130%;
+}
+
+article04{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+::first-line {
+  color: dodgerblue;
+
+
+
+  /* ADVERTENCIA: NO USES ESTOS*/
+  /* Muchas propiedades son inválidas en pseudoelementos ::first-line */
+  margin-left: 5px;
+  text-indent: 5px;
+}
+
+article05{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+::grammar-error {
+  text-decoration: underline red;
+  color: red;
+}
+
+article06{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+/* dibuja en cualquier texto seleccionado el color amarillo  sobre un fondo rojo */
+::-moz-selection { color: gold;  background: red; }
+::selection      { color: gold;  background: red; }
+
+/* dibuja el texto seleccionado en un parrafo de color blanco y negro*/
+p::-moz-selection { color: white;  background: black; }
+p::selection      { color: white;  background: black; }
+
+article07{
+  background-color: none;
+  color: white;
+  height: 35vh;
+  text-align: center;
+  border: 5px solid lightgreen;
+}
+
+::spelling-error {
+  color: red;
+}

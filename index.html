@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--estos son estilos de bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Pseudoclases y Pseudoelementos!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="container">
+            <header class=" altura1">
+              <nav class="navbar" style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Juan Camilo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            
+            <nav2 class="row container2">
+                <div class="col-12">
+                    <h1>Pseudoclases😎</h1>
+                </div>
+            </nav2>
+
+            <div class="row">
+                <article class="col-3">
+                    <h3>active</h3>
+                    <a href="#">Este enlace cambiará a color lima mientras hace clic en él.</a>
+                    <h4>Selecciona un elemento cuando el usuario lo activa (por ejemplo, con un clic).</h4>
+                </article>
+
+                <article2 class="col-3">
+                    <h3>any-link</h3>
+                    <a href="https://youtube.com">Enlace externo</a><br>
+                    <a href="https://amazon.com">Enlace de destino interno</a><br>
+                    <a>Enlace de marcador de posición (no se personalizará)</a>
+                    <h4>Selecciona los estados :link y :visited de un enlace.</h4>
+                </article2>
+
+                <article3 class="col-3">
+                    <h3>blank</h3>
+                    <h4>Selecciona un elemento "input" cuyo valor de entrada está vacío.</h4>
+                </article3>
+
+                <article4 class="col-3">
+                    <h3>checked</h3>
+                    <div>
+                        <input type="radio" name="my-input" id="yes">
+                        <label for="yes">Yes</label>
+                      
+                        <input type="radio" name="my-input" id="no">
+                        <label for="no">No</label>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" name="my-checkbox" id="opt-in">
+                        <label for="opt-in">Check me!</label>
+                      </div>
+                      
+                      <select name="my-select" id="fruit">
+                        <option value="opt1">Apples</option>
+                        <option value="opt2">Grapes</option>
+                        <option value="opt3">Pears</option>
+                      </select>
+                      <h4>Selecciona un botón de opción o casilla de verificación en el estado que determines.</h4>
+                </article4>
+            </div>
+
+            
+
+            <div class="row container3">
+                <article5 class="col-3">
+                    <h3>current</h3>
+                    <video controls preload="metadata" height="150" >
+                        <source src="video/grand-theft-auto-v-trailer.mp4" type="video/mp4" />
+                        <source src="video.webm" type="video/webm" />
+                        <track
+                          label="English"
+                          kind="subtitles"
+                          srclang="en"
+                          src="subtitles.vtt"
+                          default />
+                      </video>
+                      <h4>Selecciona el elemento que se muestra en ese momento, o un ancestro de ese elemento.</h4>
+                </article5>
+
+                <article6 class="col-3">
+                    <h3>default</h3>
+                    <input type="radio" name="season" id="spring">
+                    <label for="spring">Spring</label>
+
+                    <input type="radio" name="season" id="summer" checked>
+                    <label for="summer">Summer</label>
+
+                    <input type="radio" name="season" id="fall">
+                    <label for="fall">Fall</label>
+
+                    <input type="radio" name="season" id="winter">
+                    <label for="winter">Winter</label>
+                    <h4>Selecciona uno o más elementos de interfaz de usuario cuyo valor es el predeterminado de entre un conjunto de elementos similares.</h4>	
+                </article6>
+
+                <article7 class="col-3">
+                    <h3>dir</h3>
+                    <div dir="rtl">
+                        <span>test1</span>
+                        <div dir="ltr">test2
+                          <div dir="auto">עִבְרִית</div>
+                        </div>
+                      </div>
+                      <h4>Selecciona un elemento según su direccionalidad (valor del atributo dir de HTML o propiedad direction de CSS).</h4>
+                </article7>
+
+                <article8 class="col-3">
+                    <h3>disabled</h3>
+                    <form action="#">
+                        <fieldset id="shipping">
+                          <legend>Dirección de Envío</legend>
+                          <input type="text" placeholder="Nombre">
+                          <input type="text" placeholder="Dirección">
+                          <input type="text" placeholder="Código postal">
+                        </fieldset>
+                        <br>
+                        <fieldset id="billing">
+                          <legend>Dirección de facturación</legend>
+                          <label for="billing_is_shipping">Igual que la dirección de envío:</label>
+                          <input type="checkbox" id="billing-checkbox" checked>
+                          <br>
+                          <input type="text" placeholder="Nombre" disabled>
+                          <input type="text" placeholder="Dirección" disabled>
+                          <input type="text" placeholder="Código postal" disabled>
+                        </fieldset>
+                      </form>
+                </article8>
+            </div>
+
+            <div class="row container4">
+                <article9 class="col-3">
+                    <h3>empty</h3>
+                    <div class="box"><!-- Voy a ser de color lima. --></div>
+                    <div class="box">Voy a ser de color rosa.</div>
+                    <div class="box">
+                <!-- Seré de color rosa debido a los espacios en blanco alrededor de este comentario. -->
+                    </div>
+                    <p>Selecciona un elemento que no tiene elementos hijo, excepto por algún espacio en blanco opcional.</p>
+                </article9>
+
+                <article10 class="col-3">
+                    <h3>enabled</h3>
+                    <form action="url_of_form">
+                        <label for="FirstField">Primer campo (habilitado):</label>
+                        <input type="text" id="FirstField" value="Lorem"><br>
+                      
+                        <label for="SecondField">Segundo campo (deshabilitado):</label>
+                        <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
+                      
+                        <input type="button" value="Enviar">
+                      </form>
+                      <h4>Selecciona elementos de la interfaz de usuario que están en estado activo.</h4>
+                </article10>
+
+                <article11 class="col-3">
+                    <h3>first</h3>
+                    <p>Primera página.</p>
+                    <p>Segunda página.</p>
+                    <button>Imprimir!</button>
+                    <h4>En Paged Media (en-US), selecciona la primera página.</h4>
+                </article11>
+
+                <article12 class="col-3">
+                    <h3>first-child</h3>
+                    <div>
+                      <p>¡Este texto está seleccionado!</p>
+                      <p>Este texto no está seleccionado.</p>
+                    </div>
+                    
+                    <div>
+                      <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                      <p>Este texto no está seleccionado.</p>
+                    </div>
+
+                    <P>*Selecciona el primero entre elementos hermanos.*</P>
+                </article12>
+            </div>
+
+            <div class="row container5">
+                <article13 class="col-3">
+                    <h3>first-of-type</h3>
+                    <h2>Encabezado</h2>
+                    <p>Párrafo 1</p>
+                    <p>Párrafo 2</p>
+                    <h4>Selecciona el primero entre un tipo determinado de elementos hermanos.</h4>
+                </article13>
+
+                <article14 class="col-3">
+                    <h3>focus</h3>
+                    <input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+                    <input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+                    <h4>Selecciona el elemento que tiene el foco.</h4>
+                </article14>
+
+                <article15 class="col-3">
+                    <h3>focus-visible</h3>
+                    <input value="Default styles"><br>
+                    <button>Default styles</button><br>
+                    <input class="focus-only" value=":focus only"><br>
+                    <button class="focus-only">:focus only</button><br>
+                    <input class="focus-visible-only" value=":focus-visible only"><br>
+                    <button class="focus-visible-only">:focus-visible only</button>
+                </article15>
+
+                <article16 class="col-3">
+                    <h3>focus-within</h3>
+                    <p>Intenta escribir en este formulario.</p>
+
+                    <form>
+                      <label for="given_name">Nombre:</label>
+                      <input id="given_name" type="text">
+                      <br>
+                      <label for="family_name">Apellido:</label>
+                      <input id="family_name" type="text">
+                    </form>
+                    <h4>Selecciona el elemento que tiene el foco y el elemento con un descendiente que tiene el foco.</h4>
+                </article16>
+            </div>
+
+            <div class="row container6">
+                <article17 class="col-3">
+                    <h3>future</h3>
+                    <video controls preload="metadata" height="150">
+                      <source src="video/grand-theft-auto-v-trailer.mp4" type="video/mp4" />
+                      <source src="video.webm" type="video/webm" />
+                      <track
+                        label="English"
+                        kind="subtitles"
+                        srclang="en"
+                        src="subtitles.vtt"
+                        default />
+                    </video>
+                    <h4>Selecciona los elementos que van después del elemento en curso.</h4>
+                </article17>
+
+                <article18 class="col-3">
+                    <h3>hover</h3>
+                    <a href="#">Intenta pasar el mouse sobre este enlace.</a>
+                    <h4>Selecciona un elemento cuando el usuario interactúa con él.</h4>
+                </article18>
+
+                <article19 class="col-3">
+                    <h3>indeterminate</h3>
+                    <div>
+                      <input type="checkbox" id="checkbox">
+                      <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="radio">
+                      <label for="radio">Esta etiqueta comienza con el color lima.</label>
+                    </div>
+                    <h4>Selecciona elementos de interfaz de usuario cuyo valor está en un estado no determinado, por lo general se trata de casillas de verificación.</h4>
+                </article19>
+
+                <article20 class="col-3">
+                    <h3>in-range</h3>
+                    <form action="" id="form1">
+                      <ul>Los valores entre 1 y 10 son válidos.
+                        <li>
+                          <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                          <label for="value1">Tu valor esta </label>
+                        </li>
+                      </ul>
+                    </form>
+                    <h4>Selecciona un elemento cuyo valor se encuentra dentro de un rango de valores determinado.</h4>
+                </article20>
+            </div>
+
+            <div class="row container7">
+              <article21 class="col-3">
+                <h3>invalid</h3>
+                <form>
+                  <label for="url_input">Ingresa una URL:</label>
+                  <input type="url" id="url_input" />
+                  <br />
+                  <br />
+                  <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+                  <input type="email" id="email_input" required/>
+                </form>
+                <h4>Selecciona un elemento, como por ejemplo un <input>, cuyo estado es no válido.</h4>
+              </article21>
+
+              <article22 class="col-3">
+                <h3>lang</h3>
+                <div lang="en"><q>Esta cita en inglés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="fr"><q>Esta cita en francés tiene una cita <q>anidada</q> adentro.</q></div>
+                <div lang="de"><q>Esta cita en aleman tiene una cita <q>anidada</q> adentro.</q></div>
+                <h4>Selecciona un elemento según el idioma (valor del atributo lang de HTML)</h4>
+              </article22>
+
+              <article23 class="col-3">
+                <h3>last-child</h3>
+                <div>
+                  <p>Este texto no está seleccionado.</p>
+                  <p>¡Este texto está seleccionado!</p>
+                </div>
+                
+                <div>
+                  <p>Este texto no está seleccionado.</p>
+                  <h2>Este texto no está seleccionado: no es un `p`.</h2>
+                </div>
+              </article23>
+
+              <article24 class="col-3">
+                <h3>last-of-type</h3>
+                  <h2>Título</h2>
+                  <p>Párrafo 1</p>
+                  <p>Párrafo 2</p>
+              </article24>
+            </div>
+
+            <div class="row container8">
+              <article25 class="col-3">
+                <h3>left</h3>
+                  <h4>La :left CSS pseudo-clase, utilizada con la regla @page at, representa todas las páginas de la izquierda de un documento impreso.</h4>
+              </article25>
+
+              <article26 class="col-3">
+                <h3>link</h3>
+                <a href="#ordinary-target">Este es un enlace ordinario.</a><br>
+                <a href="">Ya has visitado este enlace.</a><br>
+                <a>Enlace de marcador de posición (no se personalizará)</a>
+                <h4>Selecciona los enlaces no visitados.</h4>
+              </article26>
+
+              <article27 class="col-3">
+                <h3>local-link</h3>
+                <a href="#target">This is a link on the current page.</a><br />
+                <a href="https://getbootstrap.com/">This is an external link</a><br />
+                <h4>Selecciona los enlaces que dirigen a páginas que se encuentran en la misma página web que el documento activo.</h4>
+              </article27>
+
+              <article28 class="col-3">
+                <h3>is()</h3>
+                  <h6>Selecciona cualquiera de los selectores de la lista de selección que se pase como valor de este selector.</h6>
+              </article28>
+            </div>
+
+            <div class="row container9">
+              <article29 class="col-3">
+                <h3>not</h3>
+                <p>Soy un párrafo.</p>
+                <p class="fancy">¡Soy muy elegante!</p>
+                <div>NO soy un párrafo.</div>
+                <h5>Selecciona elementos que otros selectores no han seleccionado antes y que se han pasado como valor de este selector.</h5>
+              </article29>
+
+              <article30 class="col-3">
+                <h3>nth-child</h3>
+                <h6><code>span:nth-child(2n+1)</code>, SIN un
+                  <code>&lt;em&gt;</code> entre los hijos.</h6>
+               <p>Los hijos 1, 3, 5 y 7 son seleccionados.</p>
+               <div class="first">
+                 <span>Span 1!</span>
+                 <span>Span 2</span>
+                 <span>Span 3!</span>
+                 <span>Span 4</span>
+                 <span>Span 5!</span>
+                 <span>Span 6</span>
+                 <span>Span 7!</span>
+               </div>
+               
+              </article30>
+
+              <article31 class="col-3">
+                <h3>nth-of-type</h3>
+                <div>
+                  <div>Este elemento no se cuenta.</div>
+                  <p>1er párrafo.</p>
+                  <p>2do párrafo.</p>
+                  <div>Este elemento no se cuenta.</div>
+                  <p>3er párrafo.</p>
+                  <p>4to párrafo.</p>
+                </div>
+              </article31>
+
+              <article32 class="col-3">
+                <h3>nth-last-child</h3>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Primera línea</td>
+                    </tr>
+                    <tr>
+                      <td>Segunda línea</td>
+                    </tr>
+                    <tr>
+                      <td>Tercera línea</td>
+                    </tr>
+                    <tr>
+                      <td>Cuarta línea</td>
+                    </tr>
+                    <tr>
+                      <td>Quinta línea</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>La pseudo-clase :nth-last-child() de CSS selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.</p>
+              </article32>
+            </div>
+
+            <div class="row container10">
+              <article33 class="col-3">
+                <h3>nth-last-of-type</h3>
+                <div>
+                  <span>Este es un span.</span>
+                  <span>Este es otro span.</span>
+                  <em>Esto esta enfatizado.</em>
+                  <span>¡Guauu, este span se pone color lima!</span>
+                  <strike>Esto está tachado.</strike>
+                  <span>Aquí hay un último span.</span>
+                </div>
+              </article33>
+
+              <article34 class="col-3">
+                <h3>only-child</h3>
+                <main>
+                  <div>
+                    <i>Soy un hijo único y solitario.</i>
+                  </div>
+                
+                  <div>
+                    <i>Yo tengo hermanos.</i><br>
+                    <b>¡Yo también!</b><br>
+                    <span>Yo también tengo hermanos, <span>pero este es un hijo único.</span></span>
+                  </div>
+                </main>
+              </article34>
+
+              <article35 class="col-3">
+                <h3>only-of-type</h3>
+                <main>
+                  <div>Soy un `div` #1.</div>
+                  <p>Yo soy el único `p` entre mis hermanos.</p>
+                  <div>Soy un `div` #2.</div>
+                  <div>Soy un `div` #3.
+                    <i>Yo soy el único hijo `i`.</i>
+                    <em>Soy un `em` #1.</em>
+                    <em>Soy un `em` #2.</em>
+                  </div>
+                </main>
+              </article35>
+
+              <article36 class="col-3">
+                <h3>optional</h3>
+                <h4>Selecciona los elementos de formulario que son innecesarios.</h4>
+              </article36>
+            </div>
+
+            <div class="row container11">
+              <article37 class="col-3">
+                <h3>out-of-range</h3>
+                <form action="" id="form1">
+                  <ul>Los valores entre 1 y 10 son válidos.
+                    <li>
+                      <input id="value1" name="value1" type="number" placeholder="1 a 10" min="1" max="10" value="12">
+                      <label for="value1">Tu valor esta </label>
+                    </li>
+                  </ul>
+                </form>
+                <p>Selecciona un elemento cuyo valor está fuera de rango.</p>
+              </article37>
+
+              <article38 class="col-3">
+                <h3>past</h3>
+                <video controls preload="metadata" height="150">
+                  <source src="video/grand-theft-auto-v-trailer.mp4" type="video/mp4" />
+                  <source src="video.webm" type="video/webm" />
+                  <track
+                    label="English"
+                    kind="subtitles"
+                    srclang="en"
+                    src="subtitles.vtt"
+                    default />
+                </video>
+                <p>Selecciona los elementos que se encuentran antes del elemento activo.</p>
+              </article38>
+
+              <article39 class="col-3">
+                <h3>placeholder-shown</h3>
+                <input placeholder="¡Escribe algo aquí!">
+                <p>Selecciona el elemento de entrada que muestra texto de marcador de posición.</p>
+              </article39>
+
+              <article40 class="col-3">
+                <h3>playing</h3>
+                <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede «reproducir» o «pausar», cuando el elemento está «en reproducción».</p>
+              </article40>
+            </div>
+
+            <div class="row container12">
+              <article41 class="col-3">
+                <h3>paused</h3>
+                  <p>Selecciona un elemento que representa un audio, un vídeo o un recurso similar que se puede “«reproducir» o «pausar» cuando el elemento está «pausado».</p>
+              </article41>
+
+              <article42 class="col-3">
+                <h3>read-only</h3>
+                <input type="text" value="Aquí puedes poner lo que quieras.">
+                <input type="text" value="Campo de solo lectura." readonly>
+                <p>Este es un párrafo normal.</p>
+                <p contenteditable="true">Puedes editar este párrafo, ¡inténtalo!</p>
+              </article42>
+
+              <article43 class="col-3">
+                <h3>read-write</h3>
+                <input type="text" value="Escribe lo que quieras aquí.">
+                <input type="text" value="Este es un campo de solo lectura." readonly>
+                <p>Este es un párrafo normal.</p>
+                <p contenteditable="true">¡Puedes editar este párrafo!</p>
+              </article43>
+
+              <article44 class="col-3">
+                <h3>required</h3>
+                  <p>Selecciona los elementos de formulario que son necesarios.</p>
+              </article44>
+            </div>
+
+            <div class="row container13">
+              <article45 class="col-3">
+                <h3>right</h3>
+                  <p>En Paged Media (en-US) selecciona las páginas de la derecha.</p>
+              </article45>
+
+              <article46 class="col-3">
+                <h3>root</h3>
+                  <p>Selecciona un elemento que es la raíz del documento.</p>
+              </article46>
+
+              <article47 class="col-3">
+                <h3>scope</h3>
+                <p>Selecciona cualquier elemento de ámbito.</p>
+              </article47>
+
+              <article48 class="col-3">
+                <h3>valid</h3>
+                  <p>Selecciona un elemento como <input>, en un estado válido.</p>
+              </article48>
+            </div>
+
+            <div class="row container14">
+              <article49 class="col-6">
+                <h3>target</h3>
+                <h3>Tabla de contenido</h3>
+                <ol>
+                 <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                 <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                 <li><a href="#nowhere">Este enlace no va a ninguna parte,
+                   porque el objetivo no existe.</a></li>
+                </ol>
+                
+                <h3>Mi artículo divertido</h3>
+                <p id="p1">Puede orientar elegir como blanco <i>este párrafo</i> utilizando un
+                  fragmento de URL. ¡Haz clic en el enlace de arriba para probar!</p>
+                <p id="p2">Este es <i>otro párrafo</i>, también accesible
+                  desde los enlaces de arriba. ¿No es encantador?</p>
+              </article49>
+
+              <article50 class="col-6">
+                <h3>visited</h3>
+                <p>
+                  Páginas que quizás hayas visitado:
+              </p>
+              <ul>
+                  <li>
+                      <a href="https://developer.mozilla.org">MDN Web Docs</a>
+                  </li>
+                  <li>
+                      <a href="https://www.youtube.com/">YouTube</a>
+                  </li>
+              </ul>
+              <p>
+                Páginas que probablemente no estén en tu historial:
+              </p>
+              <ul>
+                  <li>
+                      <a href="https://developer.mozilla.org/missing-1">Random MDN page</a>
+                  </li>
+                  <li>
+                      <a href="https://example.com/missing-1">Random Example page</a>
+                  </li>
+              </ul>
+              </article50>
+            </div>
+            
+            <nav3 class="row container15">
+              <div class="col-12">
+                  <h1>Pseudoelementos🐱‍👤</h1>
+              </div>
+          </nav3>
+
+          <div class="row container16">
+            <article01 class="col-3">
+                <h3>:after</h3>
+                <p class="boring-text">Aquí hay un texto simple y aburrido.</p>
+                <p>Aquí hay un texto normal que no es ni aburrido ni emocionante.</p>
+                <p class="exciting-text">Contribuir a MDN es fácil y divertido.</p>
+            </article01>
+
+            <article02 class="col-3">
+              <h3>:before</h3>
+              <q>Algunas citas</q>, él dijo, <q>son mejores que ninguno</q>.
+              <p>Selecciona el elemento al que se puede aplicar estilo que aparece antes del contenido del elemento que lo origina.</p>
+          </article02>
+
+          <article03 class="col-3">
+            <h3>:first-letter</h3>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            <p>Selecciona la primera letra del elemento.</p>
+        </article03>
+
+        <article04 class="col-3">
+          <h3>:first-line</h3>
+          <p>Los estilos sólo se aplicarán en la primera línea de este párrafo.
+            Posteriormente, todo el texto tendrá el estilo normal.
+            ¿Ves?</p>
+      </article04>
+          </div>
+
+          <div class="row container16">
+            <article05 class="col-4">
+              <h3>:grammar-error</h3>
+              <p>My friends is coming to the party tonight.</p>
+              <p>Selecciona una parte del documento que contiene un error de gramática indicado por el navegador.</p>
+            </article05>
+
+            <article05 class="col-4">
+              <h3>:selection</h3>
+              <p>Selecciona la parte del documento que ha sido seleccionada.</p>
+            </article05>
+
+            <article05 class="col-4">
+              <h3>:spelling-error</h3>
+              <p>Selecciona una parte del documento que contiene un error de ortografía indicado por el navegador.</p>
+            </article05>
+          </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
